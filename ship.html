@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Grace & Faith Worship</title>
+
+    <!-- CSS starts here -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f5ef;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation bar */
+        header {
+            background-color: #18392e;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #f0d49a;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f0d49a;
+        }
+
+        /* Home section */
+        .home {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+
+            background:
+                linear-gradient(
+                    rgba(10, 35, 25, 0.75),
+                    rgba(10, 35, 25, 0.75)
+                ),
+                url("https://images.unsplash.com/photo-1438032005730-c779502df39b?auto=format&fit=crop&w=1600&q=80")
+                center/cover no-repeat;
+        }
+
+        .home h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #e5c17d;
+            color: #18392e;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #f5dca5;
+        }
+
+        /* General sections */
+        section:not(.home) {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #18392e;
+            margin-bottom: 20px;
+        }
+
+        /* About section */
+        #about p {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        /* Worship schedule */
+        #schedule {
+            background-color: #eae8de;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 12px #00000015;
+        }
+
+        .card h3 {
+            color: #9b7738;
+            margin-bottom: 12px;
+        }
+
+        /* Bible verse */
+        #verse {
+            background-color: #18392e;
+            color: white;
+        }
+
+        #verse h2 {
+            color: #f0d49a;
+        }
+
+        #verseText {
+            font-size: 23px;
+            font-style: italic;
+            margin: 20px auto 10px;
+            max-width: 700px;
+        }
+
+        #verseRef {
+            color: #f0d49a;
+            margin-bottom: 25px;
+        }
+
+        /* Contact */
+        #contact {
+            background-color: white;
+        }
+
+        #contact p {
+            margin: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #10281f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile responsive design */
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .home h1 {
+                font-size: 35px;
+            }
+
+            section:not(.home) {
+                padding: 45px 6%;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+    <!-- CSS ends here -->
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>✝ Grace & Faith</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#verse">Bible Verse</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div>
+            <h1>Come and Worship With Us</h1>
+
+            <p>
+                Let us worship God together in faith, hope, and love.
+            </p>
+
+            <a href="#schedule" class="btn">
+                Join Our Worship
+            </a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2>About Our Church</h2>
+
+        <p>
+            Welcome to Grace & Faith! Our church is a place where
+            people come together to worship God, pray, study the
+            Bible, and support one another. Everyone is welcome
+            to join our community and grow in faith.
+        </p>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule">
+        <h2>Our Worship Schedule</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Sunday Worship</h3>
+                <p>Every Sunday</p>
+                <p>10:00 AM - 12:00 PM</p>
+            </div>
+
+            <div class="card">
+                <h3>Bible Study</h3>
+                <p>Every Wednesday</p>
+                <p>5:00 PM - 6:00 PM</p>
+            </div>
+
+            <div class="card">
+                <h3>Prayer Meeting</h3>
+                <p>Every Friday</p>
+                <p>6:00 PM - 7:00 PM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bible Verse -->
+    <section id="verse">
+        <h2>Daily Bible Verse</h2>
+
+        <p id="verseText">
+            "The Lord is my shepherd; I shall not want."
+        </p>
+
+        <p id="verseRef">Psalm 23:1</p>
+
+        <button class="btn" onclick="changeVerse()">
+            Show Another Verse
+        </button>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <p>We would love to welcome you to our church.</p>
+        <p>Email: yourchurch@example.com</p>
+        <p>Address: Add your church address here</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Grace & Faith.
+            All rights reserved.
+        </p>
+        <p>Walking together in faith and love.</p>
+    </footer>
+
+    <!-- JavaScript starts here -->
+    <script>
+        // Bible verses
+        const verses = [
+            {
+                text: "The Lord is my shepherd; I shall not want.",
+                ref: "Psalm 23:1"
+            },
+            {
+                text: "I can do all things through Christ who strengthens me.",
+                ref: "Philippians 4:13"
+            },
+            {
+                text: "Be still, and know that I am God.",
+                ref: "Psalm 46:10"
+            },
+            {
+                text: "Trust in the Lord with all your heart.",
+                ref: "Proverbs 3:5"
+            },
+            {
+                text: "Love one another, as I have loved you.",
+                ref: "John 15:12"
+            }
+        ];
+
+        let index = 0;
+
+        function changeVerse() {
+            index = (index + 1) % verses.length;
+
+            document.getElementById("verseText").textContent =
+                '"' + verses[index].text + '"';
+
+            document.getElementById("verseRef").textContent =
+                verses[index].ref;
+        }
+
+        // Display the current year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+    <!-- JavaScript ends here -->
+
+</body>
+</html>
